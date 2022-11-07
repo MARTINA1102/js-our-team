@@ -21,14 +21,14 @@ Scott Estrada	Developer	scott-estrada-developer.jpg
 Barbara Ramos	Graphic Designer	barbara-ramos-graphic-designer.jpg
 */
 let eleContainer=document.querySelector('.container');
-let img = document.createElement("img");
+
 
 
 const arrStudents = [
 	{
 		nome: 'Wayne Barnett',
 		ruolo: 'Founder & CEO',
-		foto: 'img/wayne-barnett-founder-ceo.jpg',
+		foto:  'img/wayne-barnett-founder-ceo.jpg',
 	},
 	{
 		nome: 'Angela Caroll',
@@ -60,6 +60,6 @@ const arrStudents = [
 console.table(arrStudents);
 for (let i = 0; i < arrStudents.length; i++) {
 	console.log(`Studente numero ${i}: ${arrStudents[i].nome} ${arrStudents[i].ruolo} ${arrStudents[i].foto}`);
-    eleContainer.innerHTML+=(`<div class=card> <div class=img>${arrStudents[i].foto}</div><div class=nome>${arrStudents[i].nome}</div> <div class=ruolo> ${arrStudents[i].ruolo}</div></div>`);
+    eleContainer.innerHTML+=(`<div class=card> <img src=${arrStudents[i].foto}</img><h2 class=nome>${arrStudents[i].nome}</h2> <div class=ruolo> ${arrStudents[i].ruolo}</div></div>`);
 	
 }
