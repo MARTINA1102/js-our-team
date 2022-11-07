@@ -14,8 +14,15 @@ header{
 .container{
     margin: 0 auto;
     max-width: 800px;
-    background-color: yellow;
     text-align: center;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.card{
+    flex: 1 1 30%;
+
+
 }

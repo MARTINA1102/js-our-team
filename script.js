@@ -21,7 +21,8 @@ Scott Estrada	Developer	scott-estrada-developer.jpg
 Barbara Ramos	Graphic Designer	barbara-ramos-graphic-designer.jpg
 */
 let eleContainer=document.querySelector('.container');
-let eleCard=document.querySelector('.card');
+let img = document.createElement("img");
+
 
 const arrStudents = [
 	{
@@ -57,7 +58,8 @@ const arrStudents = [
 
 ];
 console.table(arrStudents);
-for (let i = 1; i < arrStudents.length; i++) {
+for (let i = 0; i < arrStudents.length; i++) {
 	console.log(`Studente numero ${i}: ${arrStudents[i].nome} ${arrStudents[i].ruolo} ${arrStudents[i].foto}`);
-    eleContainer.innerHTML+=(`Studente numero ${i}: ${arrStudents[i].nome} ${arrStudents[i].ruolo} ${arrStudents[i].foto}`);
+    eleContainer.innerHTML+=(`<div class=card> <div class=img>${arrStudents[i].foto}</div><div class=nome>${arrStudents[i].nome}</div> <div class=ruolo> ${arrStudents[i].ruolo}</div></div>`);
+	
 }
