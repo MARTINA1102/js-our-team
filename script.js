@@ -60,6 +60,6 @@ const arrStudents = [
 console.table(arrStudents);
 for (let i = 0; i < arrStudents.length; i++) {
 	console.log(`Studente numero ${i}: ${arrStudents[i].nome} ${arrStudents[i].ruolo} ${arrStudents[i].foto}`);
-    eleContainer.innerHTML+=(`<div class=card> <img src=${arrStudents[i].foto}</img><h2 class=nome>${arrStudents[i].nome}</h2> <div class=ruolo> ${arrStudents[i].ruolo}</div></div>`);
+    eleContainer.innerHTML+=(`<div class=card> <img class=imgn src=${arrStudents[i].foto}><h2 class=nome>${arrStudents[i].nome}</h2> <div class=ruolo> ${arrStudents[i].ruolo}</div></div>`);
 	
 }

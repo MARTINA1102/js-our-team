@@ -23,6 +23,7 @@ header{
 
 .card{
     flex: 1 1 30%;
-
-
+}
+.imgn{
+    width: 200px;
 }
