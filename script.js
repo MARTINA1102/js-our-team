@@ -20,6 +20,8 @@ Angela Lopez	Social Media Manager	angela-lopez-social-media-manager.jpg
 Scott Estrada	Developer	scott-estrada-developer.jpg
 Barbara Ramos	Graphic Designer	barbara-ramos-graphic-designer.jpg
 */
+let eleContainer=document.querySelector('.container');
+let eleCard=document.querySelector('.card');
 
 const arrStudents = [
 	{
@@ -57,4 +59,5 @@ const arrStudents = [
 console.table(arrStudents);
 for (let i = 1; i < arrStudents.length; i++) {
 	console.log(`Studente numero ${i}: ${arrStudents[i].nome} ${arrStudents[i].ruolo} ${arrStudents[i].foto}`);
+    eleContainer.innerHTML+=(`Studente numero ${i}: ${arrStudents[i].nome} ${arrStudents[i].ruolo} ${arrStudents[i].foto}`);
 }
